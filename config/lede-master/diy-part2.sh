@@ -8,7 +8,7 @@
 
 # ------------------------------- Main source started -------------------------------
 #
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+# git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 
 # Modify default theme（FROM uci-theme-bootstrap CHANGE TO luci-theme-material）
 sed -i 's/uci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
