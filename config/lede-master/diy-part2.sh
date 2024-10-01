@@ -8,8 +8,10 @@
 
 # ------------------------------- Main source started -------------------------------
 #
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+
 # Modify default theme（FROM uci-theme-bootstrap CHANGE TO luci-theme-material）
-# sed -i 's/luci-theme-bootstrap/luci-theme-atmaterial/g' ./feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
 
 # Add autocore support for armvirt
 sed -i 's/TARGET_rockchip/TARGET_rockchip\|\|TARGET_armvirt/g' package/lean/autocore/Makefile
