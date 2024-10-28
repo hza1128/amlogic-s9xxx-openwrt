@@ -380,7 +380,7 @@ jobs:
           allowUpdates: true
           removeArtifacts: false
           replacesArtifacts: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHZA_TOKEN }}
 
       - name: Packaging OpenWrt
         if: ${{ steps.clean.outputs.status }} == 'success' && !cancelled()
@@ -403,10 +403,10 @@ jobs:
           allowUpdates: true
           removeArtifacts: false
           replacesArtifacts: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHZA_TOKEN }}
           body: |
             ### OpenWrt Image information
-            - Default IP: 192.168.1.1
+            - Default IP: 192.168.10.12
             - Default username: root
             - Default password: password
             - Default WIFI name: OpenWrt
