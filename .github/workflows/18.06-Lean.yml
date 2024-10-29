@@ -220,7 +220,7 @@ on:
         options:
           - ophub
           - angel
-          - yourname
+          - hza1128
 
 env:
   FEEDS_CONF: feeds.conf.default
