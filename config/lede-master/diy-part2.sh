@@ -21,6 +21,8 @@ echo "DISTRIB_SOURCECODE='lede'" >>package/base-files/files/etc/openwrt_release
 # Modify default IP（FROM 192.168.1.1 CHANGE TO 192.168.31.4）
 sed -i 's/192.168.1.1/192.168.10.12/g' package/base-files/files/bin/config_generate
 
+# stop 443
+sed -i 's@list listen_https@# list listen_https@g' package/network/services/uhttpd/files/uhttpd.config
 # Replace the default software source
 # sed -i 's#openwrt.proxy.ustclug.org#mirrors.bfsu.edu.cn\\/openwrt#' package/lean/default-settings/files/zzz-default-settings
 #
