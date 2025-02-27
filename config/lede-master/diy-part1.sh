@@ -16,5 +16,5 @@
 #echo >> feeds.conf.default
 #echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
 #echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
+#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
