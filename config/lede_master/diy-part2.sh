@@ -60,6 +60,7 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall.git
 #git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall2.git
 git clone https://github.com/kenzok78/luci-theme-argone
+git clone https://github.com/kenzok78/luci-app-argone-config
 #
 # Apply patch
 # git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
