@@ -45,12 +45,18 @@ else
 fi
 #
 # ------------------------------- Main source ends -------------------------------
-
+# istore
+git clone --depth=1 -b main https://github.com/linkease/nas-packages-luci package/nas-packages-luci
+git clone --depth=1 -b master https://github.com/linkease/nas-packages package/nas-packages
+git clone --depth=1 -b main https://github.com/linkease/istore package/istore
 # ------------------------------- Other started -------------------------------
 #
 # Add luci-app-amlogic
 rm -rf package/luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
+git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall.git
+#git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall2.git
+#git clone https://github.com/kenzok78/luci-theme-argone
 #
 # Apply patch
 # git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
