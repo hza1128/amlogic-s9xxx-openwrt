@@ -51,7 +51,7 @@ git clone --depth=1 -b master https://github.com/linkease/nas-packages package/n
 git clone --depth=1 -b main https://github.com/linkease/istore package/istore
 # ------------------------------- Other started -------------------------------
 # 设置默认主题
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-light/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argone/g' feeds/luci/collections/luci-light/Makefile
 # Add luci-app-amlogic
 rm -rf package/luci-app-amlogic
 rm -rf feeds/luci/applications/luci-app-passwall
