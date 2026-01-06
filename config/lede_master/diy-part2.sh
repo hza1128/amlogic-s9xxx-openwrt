@@ -59,6 +59,14 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 # 设置默认主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argone/g' feeds/luci/collections/luci-light/Makefile
 #
+#luci-app-mosdns
+#git clone --depth=1 --single-branch https://github.com/sbwml/luci-app-mosdns.git
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+#
+# dockerman
+git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-dockerman.git
+#
 # 18.06 Argone theme
 git clone --depth=1 -b main https://github.com/hza81007155/luci-theme-argone package/luci-theme-argone
 git clone --depth=1 -b main https://github.com/hza81007155/luci-app-argone-config package/luci-app-argone-config
