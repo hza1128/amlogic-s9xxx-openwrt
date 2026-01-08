@@ -210,6 +210,7 @@ on:
           - 6.1.118
           - 6.1.y_6.6.y
           - 6.6.y_6.12.y
+          - 6.12.63
       auto_kernel:
         description: "Auto use the latest kernel"
         required: false
