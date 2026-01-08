@@ -56,8 +56,6 @@ git clone --depth=1 -b main https://github.com/xiaorouji/openwrt-passwall packag
 rm -rf package/luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 #
-# 设置默认主题
-sed -i 's/luci-theme-bootstrap/luci-theme-argone/g' feeds/luci/collections/luci-light/Makefile
 #
 #luci-app-mosdns
 #git clone --depth=1 --single-branch https://github.com/sbwml/luci-app-mosdns.git
@@ -78,9 +76,16 @@ git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-dockerm
 # cpufreq
 git clone --depth=1 --single-branch https://github.com/hza81007155/luci-app-cpufreq.git
 #
+# 设置默认主题
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-light/Makefile
+#
 # 18.06 Argone theme
 git clone --depth=1 -b main https://github.com/hza81007155/luci-theme-argone package/luci-theme-argone
 git clone --depth=1 -b main https://github.com/hza81007155/luci-app-argone-config package/luci-app-argone-config
+
+## 23-24.0 Argon theme
+git clone --depth=1 -b master https://github.com/hza1128/luci-theme-argon
+git clone --depth=1 -b master https://github.com/hza1128/luci-app-argon-config
 #
 # 修改版本为编译日期
 date_version=$(date +"%y.%m.%d")
